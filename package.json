@@ -1,0 +1,24 @@
+{
+  "name": "@expo/npm-proofread",
+  "version": "1.0.1",
+  "description": "Proofreads a package before publishing it to npm",
+  "main": "proofread.js",
+  "bin": {
+    "proofread": "./proofread.js"
+  },
+  "scripts": {
+    "prepublishOnly": "./proofread.js",
+    "test": "jest"
+  },
+  "jest": {
+    "resetModules": true
+  },
+  "author": "Expo <support@expo.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "semver": "^7.3.5"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
